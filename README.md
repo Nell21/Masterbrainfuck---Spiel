@@ -17,10 +17,10 @@ Installation
 
     Lade das Spiel herunter oder klone es von GitHub:
 
-    bash
-
 git clone git@github.com:Nell21/Masterbrainfuck---Spiel.git
 cd Masterbrainfuck---Spiel
+
+bash
 
 Installiere die Abhängigkeiten mit npm:
 
