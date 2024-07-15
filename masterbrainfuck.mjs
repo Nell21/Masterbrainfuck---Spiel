@@ -36,6 +36,25 @@ function gueltigeVermutung(tipp) {
   return /^[0-5]{4}$/.test(tipp);
 }
 
+/* mit for Schleife 
+function überprüfeDenTipp(tipp) {
+    // Überprüfen, ob die Länge des Strings genau 4 ist
+    if (tipp.length !== 4) {
+        return false;
+    }
+    
+    // Überprüfen, ob jedes Zeichen im Bereich von '0' bis '5' liegt
+    for (let i = 0; i < tipp.length; i++) {
+        let zahl = tipp.charAt(i);
+        if (zahl < '0' || zahl > '5') {
+            return false;
+        }
+    }
+    
+    // Rückgabe true, wenn alle Bedingungen erfüllt sind
+    return true;
+} */
+
 // Funktion, um schwarze und weiße Punkte zu vergeben:
 // schwarz = richtige Zahl an der richtigen Stelle, weiß = richtige Zahl an der falschen Stelle
 function schwarzWeißZähler(geheimnis, tipp) {
@@ -63,7 +82,40 @@ function schwarzWeißZähler(geheimnis, tipp) {
   return { schwarzePunkte, weißePunkte };
 }
 
-// Funktion, um Ziffern in farbige Punkte umzuwandeln
+// Funktion, um Ziffern in farbige Punkte umzuwandeln (Objekt- const farbigePunkte in einer Funktion)
+
+/*function zifferInFarbigenPunkt(ziffer) {
+  const farbigePunkte = {
+    0: chalk.blue,
+    1: chalk.red,
+    2: chalk.yellow,
+    3: chalk.green,
+    4: chalk.hex('#FFA500'), // Orange
+    5: chalk.hex('#800080'), // Lila
+  };
+
+  return farbigePunkte[ziffer] ? farbigePunkte[ziffer](ziffer) : blackDot;
+}       
+  
+             //->>das ergibt nur farbige Zahlen aber keine Punkte
+*/
+
+/*function zifferInFarbigenPunkt(ziffer) {
+  const farbigePunkte = {
+    0: () => chalk.blue('\u25CF'),
+    1: () => chalk.red('\u25CF'),
+    2: () => chalk.yellow('\u25CF'),
+    3: () => chalk.green('\u25CF'),
+    4: () => chalk.hex('#FFA500')('\u25CF'), // Orange
+    5: () => chalk.hex('#800080')('\u25CF'), // Lila
+  };
+
+  return farbigePunkte[ziffer]
+    ? farbigePunkte[ziffer]()
+    : chalk.white('\u25CF');
+}
+*/
+
 function zifferInFarbigenPunkt(ziffer) {
   switch (ziffer) {
     case '0':
@@ -83,7 +135,7 @@ function zifferInFarbigenPunkt(ziffer) {
   }
 }
 
-// Funktion, um eine Zahl in eine Reihe von farbigen Punkten umzuwandeln
+// Funktion, um Zahlen in einer Reihe in farbige Punkte umzuwandeln
 function zahlInFarben(zahl) {
   return zahl.split('').map(zifferInFarbigenPunkt).join(' ');
 }
@@ -100,6 +152,36 @@ const zufälligeNachrichten = [
   'Auch der längste Weg beginnt mit dem ersten Versuch!',
   'Erfolg ist kein Ziel, sondern eine Reise. Gib niemals auf!',
 ];
+
+// Funktion, um das Spiel neu zu starten oder zu beenden
+function spielNeuStartenBeenden() {
+  while (true) {
+    const entscheidung = eingabe(
+      'Möchtest du ein neues Spiel starten oder beenden? (neues Spiel: J/beenden: N): '
+    ).toUpperCase();
+    if (entscheidung === 'J') {
+      console.log(
+        chalk.green('Juchhu, ') +
+          chalk.blue('eine ') +
+          chalk.red('weitere ') +
+          chalk.magenta('Runde ') +
+          chalk.hex('#FFA500')('kann ') +
+          chalk.yellow('beginnen!')
+      );
+      dasSpielStarten();
+      break;
+    } else if (entscheidung === 'N') {
+      console.log(chalk.green.bold('Danke fürs Spielen!'));
+      process.exit(0);
+    } else {
+      console.log(
+        chalk.red.bold(
+          'Ungültige Eingabe. Bitte gib "neues Spiel" oder "beenden" ein.'
+        )
+      );
+    }
+  }
+}
 
 /* Funktion, um das Spiel neu zu starten
 function starteNeuesSpiel() {
@@ -210,13 +292,14 @@ function dasSpielStarten() {
           chalk.yellow(` Versuchen erraten.`)
       );
 
-      // Hier wird ein weiteres Spiel gestartet
+      /* Hier wird ein weiteres Spiel gestartet
       console.log(
         chalk.blue.bold(
           '\n Gut gemacht! Lust auf ein weiteres Spiel...?\n Auf gehts!'
         )
-      );
-      dasSpielStarten();
+      ); */
+
+      spielNeuStartenBeenden();
       break;
     } else if (schwarzePunkte === 0 && weißePunkte === 0) {
       const nachrichtIndex = Math.floor(
