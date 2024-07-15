@@ -1,9 +1,9 @@
-# ~~**MasterBrainFuck**~~
+# **MasterBrainFuck**
 
 Willkommen zu MasterBrainFuck! Ein einfaches (Zahlen/Punkte) Ratespiel basierend auf dem Klassiker "Mastermind".
 
-     Das Spiel Mastermind wurde 1970 von Mordechai (Marco) Meirovitz erfunden. Er war ein in Paris lebender israelischer Kommunikationsexperte. Das Spiel wurde von mehreren Spielfirmen abgelehnt und dann stellte er es selber 1971 auf der Nürnberger Spielwarenmesse vor. In Deutschland hieß es erst SuperHirn und später Mastermind. In der DDR wurde es unter LogikTrainer oder SuperCode verkauft.
-     Weitere Informationen findet ihr unter: https://de.wikipedia.org/wiki/Mastermind_(Spiel)
+Das Spiel Mastermind wurde 1970 von Mordechai (Marco) Meirovitz erfunden. Er war ein in Paris lebender israelischer Kommunikationsexperte. Das Spiel wurde von mehreren Spielfirmen abgelehnt und dann stellte er es selber 1971 auf der Nürnberger Spielwarenmesse vor. In Deutschland hieß es erst SuperHirn und später Mastermind. In der DDR wurde es unter LogikTrainer oder SuperCode verkauft.
+Weitere Informationen findet ihr unter: https://de.wikipedia.org/wiki/Mastermind_(Spiel)
 
 ### **Spielbeschreibung**
 
