@@ -15,22 +15,16 @@ Installation
 
     Lade das Spiel herunter oder klone es von GitHub:
 
-    bash
-
 git clone <repository-url>
 cd masterbrainfuck
 
 Installiere die Abhängigkeiten mit npm:
-
-bash
 
     npm install
 
 Spiel starten
 
 Führe das Spiel mit dem folgenden Befehl aus:
-
-bash
 
 node index.js
 
