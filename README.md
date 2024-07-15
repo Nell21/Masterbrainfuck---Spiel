@@ -13,12 +13,11 @@ Das Ziel ist es, die geheime Zahl in möglichst wenigen Versuchen zu erraten!
 
 Installation
 
-    Stelle sicher, dass du Node.js auf deinem Computer installiert hast.
+Stelle sicher, dass du Node.js auf deinem Computer installiert hast.
 
-    Lade das Spiel herunter oder klone es von GitHub:
+Lade das Spiel herunter oder klone es von GitHub:
 
-git clone git@github.com:Nell21/Masterbrainfuck---Spiel.git
-cd Masterbrainfuck---Spiel
+    git clone git@github.com:Nell21/Masterbrainfuck---Spiel.git cd Masterbrainfuck---Spiel
 
 Installiere die Abhängigkeiten mit npm:
 
@@ -28,7 +27,7 @@ Spiel starten
 
 Führe das Spiel mit dem folgenden Befehl aus:
 
-node index.js
+    node index.js
 
 Folge den Anweisungen auf dem Bildschirm, um das Spiel zu spielen.
 
