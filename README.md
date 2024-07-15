@@ -1,15 +1,16 @@
 ~~**MasterBrainFuck**~~
 
-Willkommen zu MasterBrainFuck! Ein einfaches Zahlenrätselspiel basierend auf dem Klassiker "Mastermind".
+Willkommen zu MasterBrainFuck! Ein einfaches (Zahlen/Punkte)Ratespiel basierend auf dem Klassiker "Mastermind".
 
 **Spielbeschreibung**
 
-MasterBrainFuck ist ein Spiel, bei dem du versuchen musst, eine geheime 4-stellige Zahl zu erraten. Die Zahlen bestehen aus Ziffern von 0 bis 5. Du bekommst Feedback in Form von schwarzen und weißen Punkten:
+MasterBrainFuck ist ein Spiel, bei dem du versuchen musst, einen geheimen 4-stelligen Farbcode in Form von farbigen Punkten zu erraten. Die Farbpunkte bestehen aus Ziffern von 0 bis 5 die jeweils einer Farbe zugeordnet sind. Die Erklärung dazu wird zum Anfang des Spiels auch noch einmal eingeblendet.
+Des Weiteren bekommst du Feedback in Form von schwarzen und weißen Punkten:
 
-    Schwarzer Punkt: Eine richtige Zahl an der richtigen Stelle.
-    Weißer Punkt: Eine richtige Zahl an der falschen Stelle.
+    Schwarzer Punkt: Eine richtige Farbe an der richtigen Stelle.
+    Weißer Punkt: Eine richtige Farbe an der falschen Stelle.
 
-Das Ziel ist es, die geheime Zahl in möglichst wenigen Versuchen zu erraten!
+Das Ziel ist es, den Farbcode in möglichst wenigen Versuchen zu erraten!
 
 **Installation**
 
@@ -27,7 +28,7 @@ Installiere die Abhängigkeiten mit npm:
 
 Führe das Spiel mit dem folgenden Befehl aus:
 
-    node index.js
+    node masterbrainfuck.mjs
 
 Folge den Anweisungen auf dem Bildschirm, um das Spiel zu spielen.
 
@@ -35,8 +36,9 @@ Folge den Anweisungen auf dem Bildschirm, um das Spiel zu spielen.
 
     Gib eine 4-stellige Zahl ein, um zu raten.
     Die Zahlen bestehen aus den Ziffern 0 bis 5.
-    Du erhältst Feedback über schwarze (richtige Zahl, richtige Stelle) und weiße Punkte (richtige Zahl, falsche Stelle).
-    Versuche, die geheime Zahl in möglichst wenigen Versuchen zu erraten!
+    Mit der Zahleneingabe entstehen farbige Punkte hinter deinem "Tipp" im Terminal.
+    Du erhältst Feedback über schwarze (richtige Farbe, richtige Stelle) und weiße Punkte (richtige Farbe, falsche Stelle).
+    Versuche, den geheimen Farbcode in möglichst wenigen Versuchen zu erraten!
 
 **Optionen während des Spiels**
 
