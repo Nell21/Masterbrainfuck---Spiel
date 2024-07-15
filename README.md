@@ -1,8 +1,11 @@
-~~**MasterBrainFuck**~~
+# ~~**MasterBrainFuck**~~
 
-Willkommen zu MasterBrainFuck! Ein einfaches (Zahlen/Punkte)Ratespiel basierend auf dem Klassiker "Mastermind".
+Willkommen zu MasterBrainFuck! Ein einfaches (Zahlen/Punkte) Ratespiel basierend auf dem Klassiker "Mastermind".
 
-**Spielbeschreibung**
+     Das Spiel Mastermind wurde 1970 von Mordechai (Marco) Meirovitz erfunden. Er war ein in Paris lebender israelischer Kommunikationsexperte. Das Spiel wurde von mehreren Spielfirmen abgelehnt und dann stellte er es selber 1971 auf der Nürnberger Spielwarenmesse vor. In Deutschland hieß es erst SuperHirn und später Mastermind. In der DDR wurde es unter LogikTrainer oder SuperCode verkauft.
+     Weitere Informationen findet ihr unter: https://de.wikipedia.org/wiki/Mastermind_(Spiel)
+
+### **Spielbeschreibung**
 
 MasterBrainFuck ist ein Spiel, bei dem du versuchen musst, einen geheimen 4-stelligen Farbcode in Form von farbigen Punkten zu erraten. Die Farbpunkte bestehen aus Ziffern von 0 bis 5 die jeweils einer Farbe zugeordnet sind. Die Erklärung dazu wird zum Anfang des Spiels auch noch einmal eingeblendet.
 Des Weiteren bekommst du Feedback in Form von schwarzen und weißen Punkten:
@@ -12,7 +15,7 @@ Des Weiteren bekommst du Feedback in Form von schwarzen und weißen Punkten:
 
 Das Ziel ist es, den Farbcode in möglichst wenigen Versuchen zu erraten!
 
-**Installation**
+## **Installation**
 
 Stelle sicher, dass du Node.js auf deinem Computer installiert hast.
 
@@ -24,7 +27,7 @@ Installiere die Abhängigkeiten mit npm:
 
     npm install
 
-**Spiel starten**
+### **Spiel starten**
 
 Führe das Spiel mit dem folgenden Befehl aus:
 
@@ -32,7 +35,7 @@ Führe das Spiel mit dem folgenden Befehl aus:
 
 Folge den Anweisungen auf dem Bildschirm, um das Spiel zu spielen.
 
-**Spielregeln**
+### **Spielregeln**
 
     Gib eine 4-stellige Zahl ein, um zu raten.
     Die Zahlen bestehen aus den Ziffern 0 bis 5.
@@ -40,13 +43,13 @@ Folge den Anweisungen auf dem Bildschirm, um das Spiel zu spielen.
     Du erhältst Feedback über schwarze (richtige Farbe, richtige Stelle) und weiße Punkte (richtige Farbe, falsche Stelle).
     Versuche, den geheimen Farbcode in möglichst wenigen Versuchen zu erraten!
 
-**Optionen während des Spiels**
+### **Optionen während des Spiels**
 
 Während des Spiels hast du folgende Optionen:
 
     J für ein neues Spiel starten
     B um das Spiel zu beenden
 
-CREATOR
+### Creator
 
-Nell Stephanie Konersmann - GitHub
+Nell Stephanie Konersmann
