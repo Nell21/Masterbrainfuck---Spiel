@@ -24,11 +24,15 @@ cd Masterbrainfuck---Spiel
 
 Installiere die Abhängigkeiten mit npm:
 
+bash
+
     npm install
 
 Spiel starten
 
 Führe das Spiel mit dem folgenden Befehl aus:
+
+bash
 
 node index.js
 
