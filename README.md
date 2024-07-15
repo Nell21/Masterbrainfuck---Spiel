@@ -1,8 +1,8 @@
-MasterBrainFuck
+~~**MasterBrainFuck**~~
 
 Willkommen zu MasterBrainFuck! Ein einfaches Zahlenrätselspiel basierend auf dem Klassiker "Mastermind".
 
-Spielbeschreibung
+**Spielbeschreibung**
 
 MasterBrainFuck ist ein Spiel, bei dem du versuchen musst, eine geheime 4-stellige Zahl zu erraten. Die Zahlen bestehen aus Ziffern von 0 bis 5. Du bekommst Feedback in Form von schwarzen und weißen Punkten:
 
@@ -11,7 +11,7 @@ MasterBrainFuck ist ein Spiel, bei dem du versuchen musst, eine geheime 4-stelli
 
 Das Ziel ist es, die geheime Zahl in möglichst wenigen Versuchen zu erraten!
 
-Installation
+**Installation**
 
 Stelle sicher, dass du Node.js auf deinem Computer installiert hast.
 
@@ -23,7 +23,7 @@ Installiere die Abhängigkeiten mit npm:
 
     npm install
 
-Spiel starten
+**Spiel starten**
 
 Führe das Spiel mit dem folgenden Befehl aus:
 
@@ -31,20 +31,20 @@ Führe das Spiel mit dem folgenden Befehl aus:
 
 Folge den Anweisungen auf dem Bildschirm, um das Spiel zu spielen.
 
-Spielregeln
+**Spielregeln**
 
     Gib eine 4-stellige Zahl ein, um zu raten.
     Die Zahlen bestehen aus den Ziffern 0 bis 5.
     Du erhältst Feedback über schwarze (richtige Zahl, richtige Stelle) und weiße Punkte (richtige Zahl, falsche Stelle).
     Versuche, die geheime Zahl in möglichst wenigen Versuchen zu erraten!
 
-Optionen während des Spiels
+**Optionen während des Spiels**
 
 Während des Spiels hast du folgende Optionen:
 
     J für ein neues Spiel starten
     B um das Spiel zu beenden
 
-Autoren
+CREATOR
 
 Nell Stephanie Konersmann - GitHub
