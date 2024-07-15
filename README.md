@@ -20,19 +20,13 @@ Installation
 git clone git@github.com:Nell21/Masterbrainfuck---Spiel.git
 cd Masterbrainfuck---Spiel
 
-bash
-
 Installiere die Abhängigkeiten mit npm:
-
-bash
 
     npm install
 
 Spiel starten
 
 Führe das Spiel mit dem folgenden Befehl aus:
-
-bash
 
 node index.js
 
